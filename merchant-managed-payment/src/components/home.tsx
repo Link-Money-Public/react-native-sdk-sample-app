@@ -7,12 +7,11 @@ import {
   LabelText,
   PressableButton,
 } from './styles';
-import {useLinkPayContext} from '@link.money/linkpay-reactnative';
+import {LinkPayEnvironment, useLinkPayContext} from '@link.money/linkpay-reactnative';
 import {useState} from 'react';
 import {Alert, ScrollView, View} from 'react-native';
 import {CreateSession} from './create-session';
 import {PaymentResponse} from '../services/make-payment';
-import {AppProperties} from '../app-properties';
 import {MakePayment} from './make-payment';
 
 export default function Home({navigation}: {navigation: any}) {
@@ -25,7 +24,7 @@ export default function Home({navigation}: {navigation: any}) {
 
   const payByBank = () => {
     context.setSessionKey(sessionKey);
-    context.setEnvironment(AppProperties.environment);
+    context.setEnvironment(LinkPayEnvironment.sandbox);
     navigation.navigate('LinkPayView');
   };
 
