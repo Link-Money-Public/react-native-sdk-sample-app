@@ -1,0 +1,9 @@
+**/build
+**/coverage
+**/.next
+**/.github
+**/README.md
+**/lib
+**/ios
+**/android
+**/vendor
