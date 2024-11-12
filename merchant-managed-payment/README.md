@@ -22,11 +22,11 @@ client ID, and client secret that you received when onboarded to the Link sandbo
 
 ### Step 1: Install Dependencies
 
-First, you need to run ```yarn install``` from the link-managed-payment directory to install the dependencies.
+First, you need to run ```yarn install``` from the merchant-managed-payment directory to install the dependencies.
 
 ### Step 2: Starting Metro
 
-Next, you will need to start **Metro**. For this, open a terminal window, navigate to the link-managed-payment
+Next, you will need to start **Metro**. For this, open a terminal window, navigate to the merchant-managed-payment
 directory, and run the following command:
 
 ```bash
@@ -35,11 +35,11 @@ yarn start
 
 ### Step 3: (IOS Only) Install Pods
 
-From the link-managed-payment directory, run ```yarn pods``` to install the pods required for the IOS build.
+From the merchant-managed-payment directory, run ```yarn pods``` to install the pods required for the IOS build.
 
 ### Step 4: Build and Deploy the App
 
-From the link-managed-payment directory, run the following command to build the app and deploy it to the simulator:
+From the merchant-managed-payment directory, run the following command to build the app and deploy it to the simulator:
 
 For Android: 
 
